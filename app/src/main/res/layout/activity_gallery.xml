@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <RelativeLayout
+        style="@style/topbar_bg">
+
+        <ImageView
+            android:id="@+id/iv_gallery_back"
+            style="@style/topbar_left_btn"
+            android:src ="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/tv_gallery_position"
+           style="@style/topbar_title"
+           android:layout_centerHorizontal="true"
+           android:text="1/2"
+            />
+
+        <ImageView
+            android:id="@+id/iv_gallery_delete"
+            style="@style/topbar_right_btn"
+            android:src ="@mipmap/icon_delete"/>
+    </RelativeLayout>
+
+    <com.rentalphang.runj.ui.ViewPagerFixed
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:unselectedAlpha="1">
+
+    </com.rentalphang.runj.ui.ViewPagerFixed>
+
+</LinearLayout>

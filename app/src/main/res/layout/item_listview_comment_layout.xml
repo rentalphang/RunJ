@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:minHeight="60dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/comment_head_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="12dp"/>
+    <TextView
+        android:id="@+id/comment_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尔雅"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/comment_head_img"
+        android:layout_marginLeft="12dp"
+        android:layout_alignTop="@id/comment_head_img"/>
+
+    <TextView
+        android:id="@+id/comment_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23232"
+        android:textSize="16sp"
+        android:textColor="@color/alpha_6"
+        android:layout_alignTop="@id/comment_name_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comment_head_img"
+        android:layout_below="@id/comment_name_text"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="12dp"
+        >
+        <TextView
+            android:id="@+id/comment_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你太美"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/comment_reply_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回复"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/comment_toUser_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="休息休息"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/comment_reply_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alpha_9"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:text="hhhhhhhaaaaaaaaaaaaaaaaaaaaa"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

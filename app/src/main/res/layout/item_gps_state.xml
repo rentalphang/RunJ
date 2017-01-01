@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:background="@drawable/bg_gps"
+    android:orientation="horizontal">
+
+    <include
+        layout="@layout/item_gps_white"/>
+
+    <TextView
+        android:id="@+id/tv_gps_tips"
+        android:textColor="@color/theme_white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS状态未知，请检查是否开启"
+        android:textSize="10sp"
+        android:singleLine="true"/>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:animateLayoutChanges="true"
+              android:layout_weight="5"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_white">
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="0.00"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="平均速度(KM/H)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_kcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="0"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="卡路里(kcal)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_peisu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="0\'00\'\'"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="配速(分钟/公里)"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_tracePause"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_run_pause"
+            android:text="暂停"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/bt_traveContinue"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/bt_tracePause"
+            android:layout_marginRight="26dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_run_continue"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            android:text="继续"/>
+        <Button
+            android:id="@+id/bt_traceStop"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/bt_tracePause"
+            android:layout_marginLeft="26dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_run_stop"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            android:text="结束"/>
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bt_traceShare"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:background="@color/yellow"
+            android:textSize="18sp"
+            android:text="分享运动成果"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

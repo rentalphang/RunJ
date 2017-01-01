@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_publish_dynamic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        style="@style/topbar_bg"
+        >
+
+        <Button
+            android:id="@+id/bt_dynamic_send"
+                 style="@style/topbar_right_btn"
+            android:text="发布"/>
+        <ImageView
+            android:id="@+id/iv_dynamic_close"
+            style="@style/topbar_left_btn"
+            android:src="@mipmap/icon_close"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/publish_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:lines="6"
+            android:textSize="16sp"
+            android:hint="说点什么吧"
+            android:gravity="top"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+    <!--<GridView-->
+        <!--android:id="@+id/publish_gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:listSelector="@android:color/transparent"-->
+        <!--android:numColumns="3"-->
+        <!--android:scrollbars="none"-->
+        <!--android:horizontalSpacing="3dp"-->
+        <!--android:verticalSpacing="3dp"-->
+        <!--&gt;-->
+
+    <!--</GridView>-->
+    <me.iwf.photopicker.widget.MultiPickResultView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"/>
+
+
+</LinearLayout>

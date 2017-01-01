@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_item_time"
+        android:background="#20000000"
+        android:padding="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="11dp">
+        <ImageView
+            android:id="@+id/chat_item_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_avatar"/>
+
+        <TextView
+            android:id="@+id/chat_item_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="left|center"
+            android:layout_toLeftOf="@id/chat_item_avatar"
+            android:background="@drawable/chat_right_qp"
+            android:lineSpacingExtra="3dp"
+            android:maxWidth="225.0dip"
+            android:minHeight="40dp"
+            android:minWidth="80dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            />
+        <ImageView
+            android:id="@+id/chat_item_fail_resend"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Settings"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/chat_item_message"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_chat_fail_resend"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/chat_item_send_status"
+            android:textColor="#818181"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/chat_item_message"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            />
+
+        <ProgressBar
+            android:id="@+id/chat_item_progress_load"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/chat_item_message"
+            android:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

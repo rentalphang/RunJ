@@ -1,0 +1,206 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text" parent="wrap_wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="text_middle" parent="text">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+
+    <style name="text_huge_black" parent="text_huge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_huge" parent="text">
+        <item name="android:textSize">@dimen/text_size_huge</item>
+    </style>
+
+    <style name="text_middle_black" parent="text_middle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="divider_vertical_1px" parent="divider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:background">@color/alpha_3</item>
+    </style>
+
+    <style name="divider_horizontal_1px" parent="divider">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="ll_horizontal_match_wrap" parent="match_wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="register_edit_text_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="login_edit_text_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="register_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/edit_gray_selector</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- topbar <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+    <style name="topbar_bg">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+
+    </style>
+
+
+    <style name="topbar_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="topbar_btn">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/topbar_height</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@drawable/bg_item_to_alpha</item>
+    </style>
+
+    <style name="topbar_left_btn" parent="topbar_btn">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:text"></item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="topbar_left_btn_white" parent="topbar_left_btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="topbar_right_btn" parent="topbar_btn">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/topbar_height</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <!-- <item name="android:drawableLeft">@drawable/back2</item> -->
+    <style name="topbar_return_tv" parent="topbar_left_btn">
+        <item name="android:text">返回</item>
+    </style>
+
+    <style name="topbar_return_img" parent="topbar_left_btn">
+        <item name="android:src">@mipmap/back2</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="topbar_right_img" parent="topbar_right_btn">
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- topbar menu <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <style name="topbar_menu_item_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/bg_item_to_alpha</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- topbar menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+    <!-- topbar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <style name="anim_share">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_exit</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_popshow</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/anim_pophidden</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>//标题栏背景色
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+</resources>

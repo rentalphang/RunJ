@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/topbar_bg">
+
+        <TextView
+            style="@style/topbar_title"
+            android:text="附近跑步的人"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/discover_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_discover_null"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="15dp"-->
+            <!--android:layout_marginTop="200dp"-->
+            <!--android:textSize="18sp"-->
+            <!--android:gravity="center"-->
+            <!--android:visibility="visible"-->
+            <!--android:text="附近暂时没有正在跑步的人(～ o ～)~zZ赶紧去跑步吧！"-->
+            <!--/>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_radaruser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

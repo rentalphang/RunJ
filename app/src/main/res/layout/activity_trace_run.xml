@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:animateLayoutChanges="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_traceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimary"
+                android:text="跑步进行中"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <RelativeLayout
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/traceMapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"/>
+
+                <include
+                    android:id="@+id/item_detail_gps"
+                    layout="@layout/item_gps_state"/>
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="0.00KM"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="45sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="里程(公里)"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="00:00:00"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="40sp"/>
+
+
+            </LinearLayout>
+
+    <include
+            android:id="@+id/item_detaildata_run"
+            layout="@layout/item_detail_run"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    >
+    <View
+        android:id="@+id/view_dynamic_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/alpha_3"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/relative_dynamic_date"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:layout_below="@id/view_dynamic_gray">
+
+        <TextView
+            android:id="@+id/text_dynamic_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:paddingLeft="4dp"
+            android:textColor="@color/black"
+            android:textSize="45sp"/>
+
+        <TextView
+            android:id="@+id/text_dynamic_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2月"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_below="@+id/text_dynamic_day"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_dynamic_gray_sample"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/alpha_3"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/relative_dynamic_date"
+        android:id="@+id/relative_dynamic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/text_dynamic_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="哈哈哈哈哈哈哈"
+            android:layout_marginLeft="24dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/text_dynamic_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共2张"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_dynamic_picture"
+            android:layout_toEndOf="@+id/image_dynamic_picture"/>
+
+        <ImageView
+            android:id="@+id/image_dynamic_picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

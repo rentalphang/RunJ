@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="30dp"
+              android:layout_height="50dp"
+              >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/alpha_3"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/tab_me_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:text="我"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@drawable/tab_title_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tab_dot"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:background="@drawable/bg_red_dot"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_tab_dot"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:text="5"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_red_dot"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

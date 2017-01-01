@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'debug'
+            keyPassword 'android'
+            storeFile file('C:/Users/文涛/.android/debug.keystore')
+            storePassword 'android'
+        }
+        release {
+            keyAlias 'rentalphang'
+            keyPassword '8685892'
+            storeFile file('C:/Users/文涛/.android/rentalphang.jks')
+            storePassword '8685892'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+//    **bmob-sdk版本依赖包，用于兼容Android6.0系统**
+//    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.rentalphang.runj"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main{
+            jniLibs.srcDir 'libs'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.0.1'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/BaiduTraceSDK_v2_1_12.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile project(':DiscViewlibrary')
+    compile project(':PhotoPicker')
+    compile 'cn.bmob.android:bmob-sdk:3.4.6'
+    compile 'cn.bmob.android:bmob-im:2.0.5@aar'
+    compile 'org.apache.commons:commons-lang3:3.5'
+    compile 'cn.bmob.android:bmob-sms:1.0.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.daimajia.easing:library:1.0.0@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.orhanobut:logger:1.4'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'com.android.support:design:22.0.1'
+    compile 'com.android.support:recyclerview-v7:22.0.1'
+    compile 'cn.bmob.android:bmob-push:0.8'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.4.0'
+    compile 'com.bm.photoview:library:1.4.1'
+    compile 'top.zibin:Luban:1.0.9'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+/*    compile 'cn.lemon:RefreshRecyclerView:0.1.7'*/
+
+}
+
+task clean(type: Exec) {
+    ext.lockhunter = '\"C:\\Program Files\\LockHunter\\LockHunter.exe\\"'
+    def buildDir = file(new File("build"))
+    commandLine 'cmd', "$lockhunter", '/delete', '/silent', buildDir
+}
+

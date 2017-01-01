@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="false"
+        android:drawable="@drawable/bg_btn_submit_normal"></item>
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/bg_btn_login_register_pressed"></item>
+
+</selector>

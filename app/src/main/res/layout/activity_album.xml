@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/album_main_layout">
+    <RelativeLayout
+        android:id="@+id/album_action_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/album_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/album_imagefloder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近图片"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/album_finish_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/album_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:layout_below="@id/album_action_bar_layout"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"></GridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee">
+        <TextView
+            android:textColor="@color/alpha_9"
+            android:id="@+id/albume_select_album"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="选择相册"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

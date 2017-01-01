@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        style="@style/topbar_bg"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            style="@style/topbar_title"
+            android:text="运动记录"
+            android:id="@+id/textView2"/>
+
+        <ImageView
+            android:id="@+id/iv_run_detail_back"
+            style="@style/topbar_left_btn"
+            android:src="@mipmap/back"/>
+        <ImageView
+            android:id="@+id/iv_run_detail_share"
+            style="@style/topbar_right_btn"
+            android:src="@mipmap/icon_share"/>
+
+        <ImageView
+            android:id="@+id/iv_run_detail_delete"
+            android:layout_marginRight="50dp"
+            style="@style/topbar_right_btn"
+            android:src="@mipmap/icon_delete"/>
+
+
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/layout_run_detail"></include>
+
+</LinearLayout>

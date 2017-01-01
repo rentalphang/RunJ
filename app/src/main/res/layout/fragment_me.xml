@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/topbar_bg"
+        >
+
+        <ImageView
+            android:id="@+id/iv_me_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/upload_head_pic"/>
+
+        <Button
+            android:id="@+id/bt_me_setting"
+            style="@style/topbar_right_btn"
+            android:text="设置"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_me_setting"
+            android:layout_alignBottom="@+id/bt_me_setting"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/iv_me_icon"
+            android:layout_toRightOf="@+id/iv_me_icon"
+            android:text="RENTAL"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <com.xinlan.discview.DiscView
+                    android:id="@+id/disc_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:dvBottomCircleIsShow="true"
+                    app:dvOuterCircleShow="false"
+                    app:dvStartRotateAngle="10"
+                    app:dvStrokenWidth="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_me_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="你离你第一个100KM，还有100KM，继续加油吧！"
+                    android:textColor="@color/white"
+                    />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_runrecord"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_me_history"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_history"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_me_history"
+                    android:text="历史记录"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/ic_keyboard_arrow_right_black_18dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.05dp"
+                android:background="@color/alpha_3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:background="@color/alpha_3"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_alter_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_me_modify"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_modify"/>
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_me_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改资料"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/ic_keyboard_arrow_right_black_18dp"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:background="@color/alpha_3"/>
+            <RelativeLayout
+                android:id="@+id/rl_alter_weheight_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_me_modify_weiheight"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_weiheight"/>
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_me_modify_weiheight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更改体重身高"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/ic_keyboard_arrow_right_black_18dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

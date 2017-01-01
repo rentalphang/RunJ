@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_white_gps"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="6dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="60dp"
+    android:layout_height="20dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_gps_white">
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="11sp"
+        android:text="GPS"/>
+    <ImageView
+        android:id="@+id/iv_gps_state"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:src="@mipmap/ic_gps_off"/>
+
+</LinearLayout>

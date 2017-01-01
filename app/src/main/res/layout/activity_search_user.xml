@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+     style="@style/topbar_bg">
+
+        <TextView
+            style="@style/topbar_title"
+            android:text="查找用户"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/iv_search_back"
+            style="@style/topbar_left_btn"
+            android:src="@mipmap/back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_find_name"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/button_normal_shape"
+            android:hint="输入用户名"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#b3b3b3"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_search"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/btn_normal_submit_selector"
+            android:text="搜索"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/alpha_3"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sw_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

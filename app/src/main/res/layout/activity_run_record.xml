@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/topbar_bg">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            style="@style/topbar_title"
+            android:text="历史记录"/>
+
+        <ImageView
+            style="@style/topbar_left_btn"
+            android:src="@mipmap/back"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:id="@+id/run_record_sync_identifer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sync"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="未同步记录会带有此标记可下拉刷新同步本地数据"
+            android:lines="2"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/run_record_swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/run_record_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
