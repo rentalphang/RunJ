@@ -32,6 +32,7 @@
             android:layout_alignBottom="@+id/bt_me_setting"
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
+            android:singleLine="true"
             android:layout_toEndOf="@+id/iv_me_icon"
             android:layout_toRightOf="@+id/iv_me_icon"
             android:text="RENTAL"
