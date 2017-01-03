@@ -12,7 +12,7 @@ android {
         }
         release {
             keyAlias 'rentalphang'
-            keyPassword '8685892'
+
             storeFile file('C:/Users/文涛/.android/rentalphang.jks')
 
         }
